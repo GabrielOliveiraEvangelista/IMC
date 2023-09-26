@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>IMC</title>
+    <script src="main.js" defer type="module"></script>
+  </head>
+  <body>
+    <div id="screenErro">
+      <p>Não deixe campos em branco !</p>
+    </div>
+    <div id="wrapperForm">
+      <form action="">
+        <fieldset>
+          <legend>Cálculo de IMC</legend>
+          <label for="weight">Peso (kg)</label>
+          <input type="number" name="weight" id="weight" />
+          <label for="height">Altura (cm)</label>
+          <input type="number" name="height" id="height" />
+        </fieldset>
+      </form>
+      <button type="submit" id="btnResultHtml">
+        Calcular IMC <img src="img/arrow-up-right.svg" alt="Imagem de seta" />
+      </button>
+    </div>
+    <div id="wrapperResult">
+      <div id="screenResult">
+        <button id="btnClose">
+          <img src="img/close.svg" alt="svg de close da aba" />
+        </button>
+        <p id="paragraph"></p>
+      </div>
+    </div>
+  </body>
+</html>
